@@ -13,6 +13,16 @@ A full-stack web application built using Java, Spring Boot, MySQL, HTML, CSS, an
 - View total electricity bill
 - MySQL database integration
 
+## Application Screenshots
+
+### Home Page
+
+![Home Page](images/home-page.png)
+
+### MySQL Database Records
+
+![Database](images/mysql-data.png)
+
 ## Tech Stack
 
 - Java 17
