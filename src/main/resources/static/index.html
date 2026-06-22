@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Appliance Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Electric Appliance Expense Tracker</h1>
+
+    <div class="card">
+
+        <h2>Add Appliance</h2>
+
+        <form id="applianceForm">
+
+            <input type="text"
+                   id="applianceName"
+                   placeholder="Appliance Name"
+                   required>
+
+            <input type="number"
+                   id="watts"
+                   placeholder="Watts"
+                   required>
+
+            <input type="number"
+                   id="runningHours"
+                   placeholder="Running Hours"
+                   required>
+
+            <input type="number"
+                   id="daysUsed"
+                   placeholder="Days Used"
+                   required>
+
+            <input type="number"
+                   id="costPerUnit"
+                   placeholder="Cost Per Unit"
+                   required>
+
+            <button type="submit">
+                Save Appliance
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="summary">
+
+        <h2>Total Bill: ₹ <span id="totalBill">0</span></h2>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Appliance List</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Watts</th>
+                    <th>Units</th>
+                    <th>Total Cost</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="applianceTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
